@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🌼 Plant Care Tips</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f1f8e9;
+      color: #1e5569;
+      background-image: url("https://i.pinimg.com/736x/3e/ae/0c/3eae0cbe70353b2ed937cd371aea98ab.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    header {
+      padding: 40px 20px;
+      text-align: center;
+      background-color: rgba(255, 218, 185, 0.344);
+      color: rgb(1, 12, 12);
+      font-size: 2.2em;
+      font-weight: bold;
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      padding: 40px 20px;
+    }
+
+    .tip-card {
+      background: rgba(255, 218, 185, 0.562);
+      border-radius: 20px;
+      padding: 25px;
+      width: 300px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .tip-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .tip-card h3 {
+      margin-top: 0;
+      color: #000501;
+    }
+
+    .tip-card p {
+      line-height: 1.5;
+      font-size:medium;
+    }
+
+    
+
+    
+
+    .back-btn {
+      margin-top: 30px;
+      padding: 10px 20px;
+      background: #4291b3;
+      color: black;
+      text-decoration: none;
+      border-radius: 10px;
+      position:relative;
+      left:730px;
+    }
+
+    .back-btn:hover {
+      background-color: #356859;
+    }
+
+    *.tip-card{
+        font-size:xx-large;
+    }
+    
+    *.tip-card p{
+        font-size:x-large;
+        color:#000501;
+        
+
+    }
+
+    
+
+    
+  </style>
+</head>
+<body>
+  <header>🌼 Plant Care Tips</header>
+
+  
+
+  <div class="container">
+    <div class="tip-card">
+      <h3>💧 Watering</h3>
+      <p>Always water plants early in the morning or late in the evening. Use room-temperature water and avoid overwatering to prevent root rot.</p>
+    </div>
+    <div class="tip-card">
+      <h3>☀️ Sunlight</h3>
+      <p>Most plants love indirect sunlight. Place them near windows but avoid direct, harsh afternoon rays that can burn the leaves.</p>
+    </div>
+    <div class="tip-card">
+      <h3>🌱 Soil</h3>
+      <p>Use well-draining soil. Cactus and succulents need sandy soil, while tropical plants prefer moist, rich soil with compost.</p>
+    </div>
+    <div class="tip-card">
+      <h3>🌬️ Air Circulation</h3>
+      <p>Ensure plants have good air flow to reduce fungal infections. Avoid placing them too close to each other or in sealed corners.</p>
+    </div>
+    <div class="tip-card">
+      <h3>✂️ Pruning</h3>
+      <p>Remove yellowing or dead leaves regularly to promote new growth and prevent disease from spreading.</p>
+    </div>
+    <div class="tip-card">
+      <h3>🪴 Repotting</h3>
+      <p>Repot your plant once every 1-2 years to refresh the soil and give its roots more room to grow.</p>
+    </div>
+  </div>
+
+  <a href="dashboard.html" class="back-btn">Back </a>
+
+ 
+</body>
+</html>

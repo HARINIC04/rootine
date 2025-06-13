@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>🌿 Aloe Vera Care</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url(https://i.pinimg.com/736x/ad/18/99/ad189970401d6d2f9f9d745c0cfca1cd.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      background-color:#0a01017b;
+    }
+
+    header {
+      width: 100%;
+      text-align: center;
+      padding: 25px 0;
+      font-size: 2.4rem;
+      background: #a94e4ea4;
+      color:#0a0101;
+      box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+    }
+
+    .greeting {
+      background: #d58aac9f;
+      padding: 15px 25px;
+      margin: 20px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      font-size: 1.2rem;
+      color: #824c00fe;
+      animation: bounce 2s infinite ease-in-out;
+      position: relative;
+    }
+
+    .greeting::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 30px;
+      width: 0;
+      height: 0;
+      border: 10px solid transparent;
+      border-top-color: #b25f5f;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+
+    .container {
+      max-width: 700px;
+      background:  #ffffff8d;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+      margin-bottom: 40px;
+      width: 90%;
+    }
+
+    h1 {
+      color: #c34093;
+      margin-bottom: 10px;
+    }
+
+    a {
+      color:  #010a01;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 25px;
+    }
+
+    li {
+      background: #b25f5f;
+      margin: 12px auto;
+      padding: 15px 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.1rem;
+      color: white;
+      transition: 0.3s ease;
+    }
+
+    li:hover {
+      background: #ca7ed6;
+      transform: scale(1.02);
+      
+    }
+
+    input[type="checkbox"] {
+      transform: scale(1.5);
+      accent-color:  #c04375;
+    }
+
+    form {
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      border-radius: 8px;
+      border: 2px solid #b96ba3;;
+      width: 60%;
+    }
+
+    button {
+      background:#b96ba3;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background:  #ca7ed6;
+    }
+
+    .back-btn {
+    margin: 20px auto;
+    display:inline-flex; 
+    align-items: center;
+    justify-content: center;
+    background: #843a3af5;
+    color: white;
+    padding: 8px 14px; 
+    border-radius: 8px; 
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px; 
+    transition: background 0.3s ease ;}
+
+    .back-btn:hover {
+      background:#de83ac;
+    }
+
+    
+
+    footer {
+      width: 100%;
+      padding: 20px 0;
+      text-align: center;
+      background:#c2dfc339;
+      font-size: 0.9rem;
+      color:  #000000;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <header>🌿 Aloe Vera Care Tracker</header>
+
+  <div class="greeting">Hello Aloe Hero! Time to give your plant some green love 💚</div>
+
+  <div class="container">
+    <h1>Care To-Do List</h1>
+    <a href="https://en.wikipedia.org/wiki/Aloe_vera" target="_blank">Know your Aloe Vera 🌐</a>
+
+    <ul id="todo-list">
+      <li><span>💧 Water every 3 weeks</span> <input type="checkbox" class="task"></li>
+      <li><span>☀️ Place in bright indirect sunlight</span> <input type="checkbox" class="task"></li>
+      <li><span>🧼 Wipe dust off leaves</span> <input type="checkbox" class="task"></li>
+      <li><span>🔍 Check for root rot signs</span> <input type="checkbox" class="task"></li>
+      <li><span>🌿 Harvest mature leaves gently</span> <input type="checkbox" class="task"></li>
+    </ul>
+
+    <form action="https://www.youtube.com/results" target="_blank">
+      <input type="text" name="search_query" placeholder="Search aloe vera care videos...">
+      <button type="submit">Search</button>
+    </form>
+
+    <a href="dashboard.html" class="back-btn">Back</a>
+  </div>
+
+  <footer>© 2025 Harini's Plant Buddy Tracker 🌱 All rights reserved.</footer>
+
+  
+
+</body>
+</html>

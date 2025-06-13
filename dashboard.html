@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🌿 Rootine</title>
+ 
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #dbd0d0;
+      color: #1c4119;
+      background-image: url("https://i.pinimg.com/736x/89/0a/90/890a9017741b6fd00893b7889d2afbe2.jpg");
+      background-size: cover;
+      background-repeat: repeat;
+      background-attachment: fixed;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    header {
+      padding: 40px 20px;
+      text-align: center;
+      justify-content: center;
+      background-color: #b4a963;
+      color: #1c4119;
+      font-size: 2.5em;
+      font-weight: bold;
+      animation: fadeInDown 1s ease-in-out;
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(); }
+    }
+
+    
+
+    .container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 40px 20px;
+      background-color: rgba(0, 0, 0, 0.378);
+    }
+
+    .plant-card {
+      background: #5b6c42c5;
+      width: 250px;
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      color: black;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      padding: 20px;
+    }
+
+    .plant-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    .plant-card img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 15px;
+      margin-bottom: 15px;
+    }
+
+    nav {
+      width: 100%;
+      text-align: center;
+      margin: 30px 0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      background-color: #b4a963;
+      color: black;
+      padding: 12px 24px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #b7a113;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      .plant-card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>🌿 Rootine</header>
+
+  <div class="container">
+    <a href="plant1.html" class="plant-card">
+      <img src="./cactus.jpg" alt="Cactus" />
+      <h3>Cactus</h3>
+    </a>
+    <a href="plant2.html" class="plant-card">
+      <img src="./money plant.jpg" alt="Money Plant" />
+      <h3>Money Plant</h3>
+    </a>
+    <a href="plant3.html" class="plant-card">
+      <img src="./Aloe vera.jpg" alt="Aloe Vera" />
+      <h3>Aloe Vera</h3>
+    </a>
+  
+
+  <nav>
+    <a href="tracker.html">🌱 My Plants</a>
+    <a href="addplant.html">➕ Add Plant</a>
+    <a href="caretip.html">💡 Care Tips</a>
+  </nav>
+  </div>
+
+</body>
+</html>
